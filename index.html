@@ -4,13 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faisal Alsanea | HR Specialist & Operations Expert</title>
-  <meta name="description" content="Professional portfolio of Faisal Alsanea, HR Specialist and Operations Expert specializing in Talent Acquisition and Saudi Labor compliance.">
+  <meta name="description" content="Portfolio of a driven HR leader specializing in operations and recruitment.">
+  <!-- SEO & Social Media Preview (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://falsanea.vercel.app/">
+  <meta property="og:title" content="Faisal Alsanea | HR Specialist & Operations">
+  <meta property="og:description" content="Portfolio of a driven HR leader specializing in operations and recruitment.">
+  <meta property="og:image" content="https://falsanea.vercel.app/og-image.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://falsanea.vercel.app/">
+  <meta name="twitter:title" content="Faisal Alsanea | HR Specialist & Operations">
+  <meta name="twitter:description"
+    content="Portfolio of a driven HR leader specializing in operations and recruitment.">
+  <meta name="twitter:image" content="https://falsanea.vercel.app/og-image.png">
+  <!-- REMINDER: Place your actual image file named 'og-image.png' inside the 'public' folder before deploying -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Tajawal:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -29,9 +44,10 @@
       },
     }
   </script>
-  
   <style>
-    :root { scroll-behavior: smooth; }
+    :root {
+      scroll-behavior: smooth;
+    }
     .bg-ops-pattern {
       background-image: radial-gradient(#10b981 0.5px, transparent 0.5px);
       background-size: 24px 24px;
@@ -41,16 +57,24 @@
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
     @media (max-width: 768px) {
-      .stats-grid { display: flex; flex-direction: column; }
+      .stats-grid {
+        display: flex;
+        flex-direction: column;
+      }
     }
   </style>
+  <link rel="stylesheet" href="/index.css">
 </head>
 <body class="selection:bg-emerald-500/30 overflow-x-hidden">
   <div id="root"></div>
-  <!-- هذا السطر هو الأهم، قمنا بتغييره لكي يبحث عن ملف التشغيل الأساسي -->
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
