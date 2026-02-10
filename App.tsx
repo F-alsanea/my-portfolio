@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Home, Briefcase, GraduationCap, UserCircle, ShieldCheck, Download, Eye, 
-  Linkedin, ThumbsUp, MessageSquare, Plus, ArrowUpRight, 
-  Award, CheckCircle, Printer, X, FileText, MapPin, 
+import {
+  Home, Briefcase, GraduationCap, UserCircle, ShieldCheck, Download, Eye,
+  Linkedin, ThumbsUp, MessageSquare, Plus, ArrowUpRight,
+  Award, CheckCircle, Printer, X, FileText, MapPin,
   Mail, Phone, Database, Target, Search, Sun, Moon, Monitor, ArrowUpCircle,
-  Globe, Fingerprint, Workflow, Landmark, LayoutGrid, Users, Cpu
+  Globe, Fingerprint, Workflow, Landmark, LayoutGrid, Users, Cpu, BrainCircuit, Rocket, Zap, BarChart
 } from 'lucide-react';
 
 // --- البيانات والنصوص (Translations) ---
@@ -15,43 +15,43 @@ const translations = {
     nav: { home: "Home", education: "Education", skills: "Skills", certs: "Certifications", resume: "Resume", linkedin: "LinkedIn", logo: "Faisal Alsanea" },
     hero: {
       name: "Faisal Alsanea",
-      badge: "Verified Talent Specialist",
-      title_part1: "HR Specialist &",
-      title_part2: "Operations Expert",
-      desc: "Results-oriented HR professional with a focus on full-cycle recruitment and operations. Optimized hiring efficiency by 25% with 100% compliance in Saudi Labor systems.",
+      badge: "Talent Acquisition Specialist",
+      title_part1: "Talent Acquisition Specialist &",
+      title_part2: "Onboarding Expert",
+      desc: "Results-oriented Talent Acquisition Specialist with a proven track record in Full-Cycle Recruitment and Strategic Headhunting. Leveraging AI-driven sourcing to improve recruitment efficiency by 25%.",
       btn_view: "View Full Resume",
       btn_download: "Download PDF",
     },
     achievements: {
-      title: "Performance Dashboard",
-      efficiency: "Hiring Lifecycle",
-      records: "Digital Assets",
-      compliance: "Legal Adherence",
-      logistics: "Executive Support",
-      val_efficiency: "25%",
-      val_records: "+500",
-      val_compliance: "100%",
-      val_logistics: "+150",
+      title: "Performance Metrics",
+      role_label: "Specialized Roles",
+      role_val: "15+",
+      eff_label: "Efficiency Increase",
+      eff_val: "25%",
+      ai_label: "AI-Powered Sourcing",
+      ai_val: "AI",
+      time_label: "Time-to-Hire Reduction",
+      time_val: "20%",
     },
     skills: {
-      title: "Skill Sets",
-      desc: "A blend of local government portal mastery and global HR methodologies.",
-      talent: { title: "Talent Sourcing", sub: "RECRUITMENT" },
-      ops: { title: "Executive Ops", sub: "OPERATIONS" },
-      tech: { title: "FlowCV / ATS", sub: "HR TECH" },
-      mudad: { title: "Mudad (مدد)", sub: "PAYROLL" },
-      gosi: { title: "GOSI (التأمينات)", sub: "GOV SYSTEMS" },
-      qiwa: { title: "Qiwa (قوى)", sub: "GOV SYSTEMS" }
+      title: "Technical Skills",
+      desc: "Expertise in AI-Driven Recruitment, Strategic Sourcing, and HR Solution Architecture",
+      talent: { title: "Headhunting", sub: "STRATEGIC SOURCING" },
+      ops: { title: "AI-Powered", sub: "AUTOMATED RANKING" },
+      tech: { title: "ATS Optimization", sub: "RECRUITMENT TECH" },
+      analytics: { title: "Data Analytics", sub: "INSIGHTS & REPORTING" },
+      onboarding: { title: "Strategic Onboarding", sub: "EMPLOYEE INTEGRATION" },
+      architecture: { title: "Solution Architecture", sub: "CUSTOM HR TOOLS" }
     },
     education: {
       title: "Academic Foundation",
       uni: "King Abdulaziz University",
       degree: "Bachelor of English Language and Literature",
-      period: "March 2017 – January 2022",
+      period: "January 2022",
       highlights: [
-        "Professional Communication & Technical Report Writing.",
-        "Analytical Thinking & Linguistic Analysis.",
-        "Bilingual Proficiency in Multicultural Environments."
+        "Research Methods & Practical Training.",
+        "Persuasion & Professional Communication.",
+        "Adaptability & Remote Collaboration."
       ]
     },
     certs: {
@@ -68,7 +68,7 @@ const translations = {
     },
     activity: {
       title: "Professional Connectivity",
-      desc: "Join my network for daily HR and recruitment tips regarding (Qiwa, GOSI, Mudad)."
+      desc: "Join my network for daily HR and recruitment tips."
     },
     footer: { rights: "Faisal Alsanea. All rights reserved." }
   },
@@ -77,42 +77,42 @@ const translations = {
     hero: {
       name: "فيصل السني",
       badge: "ممارس معتمد في استقطاب المواهب",
-      title_part1: "أخصائي موارد بشرية و",
-      title_part2: "خبير عمليات",
-      desc: "أخصائي موارد بشرية متميز بخبرة في الاستقطاب والعمليات. ساهمت في رفع كفاءة التوظيف بنسبة 25% مع الالتزام الكامل بأنظمة العمل السعودي (قوى، التأمينات، مدد).",
+      title_part1: "أخصائي استقطاب المواهب و",
+      title_part2: "خبير التهيئة الوظيفية",
+      desc: "أخصائي استقطاب مواهب متميز بخبرة في التوظيف الكامل والصيد الاستراتيجي للكفاءات. أستخدم تقنيات الذكاء الاصطناعي لرفع كفاءة التوظيف بنسبة 25% وتحسين تجربة المرشحين.",
       btn_view: "عرض السيرة الذاتية",
       btn_download: "تحميل PDF",
     },
     achievements: {
-      title: "لوحة مؤشرات الأداء",
-      efficiency: "منطق التوظيف",
-      records: "أنظمة السجلات",
-      compliance: "الامتثال الحكومي",
-      logistics: "الدعم التنفيذي",
-      val_efficiency: "25%",
-      val_records: "+500",
-      val_compliance: "100%",
-      val_logistics: "+150",
+      title: "مؤشرات الأداء",
+      role_label: "أدوار تخصصية",
+      role_val: "+15",
+      eff_label: "زيادة الكفاءة",
+      eff_val: "25%",
+      ai_label: "الاستقطاب الذكي",
+      ai_val: "AI",
+      time_label: "تقليل وقت التوظيف",
+      time_val: "20%",
     },
     skills: {
-      title: "مجموعات المهارات",
-      desc: "مزيج من إتقان البوابات الحكومية المحلية ومنهجيات الموارد البشرية العالمية.",
-      talent: { title: "Talent Sourcing", sub: "RECRUITMENT" },
-      ops: { title: "Executive Ops", sub: "OPERATIONS" },
-      tech: { title: "FlowCV / ATS", sub: "HR TECH" },
-      mudad: { title: "Mudad (مدد)", sub: "PAYROLL" },
-      gosi: { title: "GOSI (التأمينات)", sub: "GOV SYSTEMS" },
-      qiwa: { title: "Qiwa (قوى)", sub: "GOV SYSTEMS" }
+      title: "المهارات التقنية",
+      desc: "خبرة في تقنيات التوظيف، البحث بالذكاء الاصطناعي، والأنظمة الحكومية.",
+      talent: { title: "Headhunting", sub: "الصيد الاستراتيجي" },
+      ops: { title: "AI-Powered", sub: "التصنيف الآلي" },
+      tech: { title: "ATS Optimization", sub: "تحسين الأنظمة" },
+      analytics: { title: "Data Analytics", sub: "التحليل والتقارير" },
+      onboarding: { title: "Strategic Onboarding", sub: "التهيئة الوظيفية" },
+      architecture: { title: "Solution Architecture", sub: "الأدوات المخصصة" }
     },
     education: {
       title: "التعليم الجامعي",
       uni: "جامعة الملك عبد العزيز",
       degree: "بكالوريوس اللغة الإنجليزية وآدابها",
-      period: "مارس 2017 – يناير 2022",
+      period: "يناير 2022",
       highlights: [
-        "التواصل المهني وصياغة التقارير الفنية.",
-        "التفكير التحليلي والتحليل اللغوي.",
-        "إتقان اللغتين في بيئات العمل متعددة الثقافات."
+        "مناهج البحث والتدريب العملي.",
+        "الإقناع والتواصل المهني.",
+        "المرونة والتعاون عن بعد."
       ]
     },
     certs: {
@@ -129,7 +129,7 @@ const translations = {
     },
     activity: {
       title: "تواصل مهني عبر LinkedIn",
-      desc: "انضم إلى شبكتي المهنية لمتابعة آخر تحديثات أنظمة الموارد البشرية (قوى، التأمينات، مدد)."
+      desc: "انضم إلى شبكتي المهنية لمتابعة آخر نصائح الموارد البشرية والتوظيف."
     },
     footer: { rights: "فيصل السني. جميع الحقوق محفوظة." }
   }
@@ -206,7 +206,7 @@ const App: React.FC = () => {
           <span className="font-black text-sm uppercase tracking-tighter">{t.nav.logo}</span>
         </div>
         <div className="flex gap-2">
-          <button onClick={toggleTheme} className="p-2 bg-white/5 rounded-xl border border-white/10"><Moon size={18}/></button>
+          <button onClick={toggleTheme} className="p-2 bg-white/5 rounded-xl border border-white/10"><Moon size={18} /></button>
           <button onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')} className="p-2 px-3 bg-emerald-600/10 text-emerald-500 rounded-xl font-bold text-xs">
             {lang === 'en' ? 'AR' : 'EN'}
           </button>
@@ -221,7 +221,7 @@ const App: React.FC = () => {
               <ShieldCheck size={18} className="text-emerald-500" />
               <span className="text-xs font-black uppercase tracking-widest text-emerald-500">{t.hero.badge}</span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-black mb-8 leading-[1.05] tracking-tighter">
+            <h1 className="text-5xl md:text-7xl font-black mb-8 leading-[1.05] tracking-tighter">
               {t.hero.title_part1} <br /><span className="text-emerald-500">{t.hero.title_part2}</span>
             </h1>
             <p className="text-lg md:text-2xl opacity-60 mb-12 max-w-2xl leading-relaxed">{t.hero.desc}</p>
@@ -236,7 +236,7 @@ const App: React.FC = () => {
               <UserCircle size={220} className="text-emerald-500/30 group-hover:scale-110 transition-transform duration-700" />
               <div className="absolute bottom-10 left-10 right-10 p-6 bg-slate-900/90 backdrop-blur-xl rounded-[2rem] border border-emerald-500/20 text-center">
                 <h4 className="font-black text-xl text-white">{t.hero.name}</h4>
-                <p className="text-[10px] text-emerald-500 font-black uppercase tracking-widest mt-1">HR & Ops Expert</p>
+                <p className="text-[10px] text-emerald-500 font-black uppercase tracking-widest mt-1">Talent & Headhunting</p>
               </div>
             </div>
           </motion.div>
@@ -248,10 +248,10 @@ const App: React.FC = () => {
         <h2 className="text-3xl md:text-5xl font-black mb-16 text-center tracking-tighter">{t.achievements.title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { label: t.achievements.logistics, val: t.achievements.val_logistics, icon: <Database className="text-amber-500" /> },
-            { label: t.achievements.compliance, val: t.achievements.val_compliance, icon: <ShieldCheck className="text-purple-500" /> },
-            { label: t.achievements.records, val: t.achievements.val_records, icon: <FileText className="text-cyan-500" /> },
-            { label: t.achievements.efficiency, val: t.achievements.val_efficiency, icon: <Target className="text-emerald-500" /> }
+            { label: t.achievements.role_label, val: t.achievements.role_val, icon: <Briefcase className="text-amber-500" /> },
+            { label: t.achievements.eff_label, val: t.achievements.eff_val, icon: <Zap className="text-emerald-500" /> },
+            { label: t.achievements.ai_label, val: t.achievements.ai_val, icon: <BrainCircuit className="text-purple-500" /> },
+            { label: t.achievements.time_label, val: t.achievements.time_val, icon: <Target className="text-cyan-500" /> }
           ].map((kpi, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-10 bg-white/5 dark:bg-slate-900 border border-white/10 rounded-[40px] hover:border-emerald-500/50 transition-all text-center md:text-left">
               <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-8 mx-auto md:mx-0">{kpi.icon}</div>
@@ -271,11 +271,11 @@ const App: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {[
             { title: t.skills.talent.title, sub: t.skills.talent.sub, icon: <Search className="text-emerald-500" /> },
-            { title: t.skills.ops.title, sub: t.skills.ops.sub, icon: <Database className="text-emerald-500" /> },
+            { title: t.skills.ops.title, sub: t.skills.ops.sub, icon: <BrainCircuit className="text-emerald-500" /> },
             { title: t.skills.tech.title, sub: t.skills.tech.sub, icon: <Cpu className="text-emerald-500" /> },
-            { title: t.skills.mudad.title, sub: t.skills.mudad.sub, icon: <Fingerprint className="text-emerald-500" /> },
-            { title: t.skills.gosi.title, sub: t.skills.gosi.sub, icon: <ShieldCheck className="text-emerald-500" /> },
-            { title: t.skills.qiwa.title, sub: t.skills.qiwa.sub, icon: <Globe className="text-emerald-500" /> },
+            { title: t.skills.analytics.title, sub: t.skills.analytics.sub, icon: <BarChart className="text-emerald-500" /> },
+            { title: t.skills.onboarding.title, sub: t.skills.onboarding.sub, icon: <Rocket className="text-emerald-500" /> },
+            { title: t.skills.architecture.title, sub: t.skills.architecture.sub, icon: <Workflow className="text-emerald-500" /> },
           ].map((skill, i) => (
             <motion.div key={i} whileHover={{ y: -8, scale: 1.02 }} className="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex flex-col items-center justify-center gap-4 group transition-all">
               <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center group-hover:bg-emerald-500/10 transition-colors">
@@ -330,12 +330,12 @@ const App: React.FC = () => {
               <ShieldCheck size={48} className="text-emerald-500 mb-6" />
               <h4 className="text-xl font-black mb-2">{t.certs.freelance}</h4>
               <p className="text-emerald-500 font-bold mb-4 text-sm">{t.certs.profession}</p>
-              <p className="text-[10px] opacity-40 mb-6 uppercase font-black">{t.certs.issuer} <br/> ID: {t.certs.id}</p>
+              <p className="text-[10px] opacity-40 mb-6 uppercase font-black">{t.certs.issuer} <br /> ID: {t.certs.id}</p>
               <a href={`https://freelance.sa/verify/${t.certs.id}`} target="_blank" rel="noopener noreferrer" className="bg-emerald-600 px-6 py-3 rounded-2xl font-black text-xs text-white shadow-lg w-full">
                 {t.certs.verify}
               </a>
             </motion.div>
-            
+
             <motion.div whileHover={{ y: -10 }} className="p-10 bg-white/5 border border-white/10 rounded-[3rem] text-center flex flex-col items-center">
               <Landmark size={48} className="text-blue-400 mb-6" />
               <h4 className="text-xl font-black mb-2">{t.certs.oxford}</h4>
@@ -375,12 +375,12 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <h4 className="text-4xl md:text-6xl font-black text-emerald-500 mb-6 tracking-tighter uppercase">{t.hero.name}</h4>
           <div className="flex justify-center gap-8 mb-12">
-            <a href="mailto:falsanea@aol.com" className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center text-white hover:text-emerald-500 hover:bg-emerald-500/10 transition-all border border-white/10"><Mail size={24}/></a>
-            <a href="https://linkedin.com/in/falsanea" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center text-white hover:text-[#0077b5] hover:bg-[#0077b5]/10 transition-all border border-white/10"><Linkedin size={24}/></a>
+            <a href="mailto:falsanea@aol.com" className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center text-white hover:text-emerald-500 hover:bg-emerald-500/10 transition-all border border-white/10"><Mail size={24} /></a>
+            <a href="https://linkedin.com/in/falsanea" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center text-white hover:text-[#0077b5] hover:bg-[#0077b5]/10 transition-all border border-white/10"><Linkedin size={24} /></a>
           </div>
           <p className="opacity-40 text-sm font-bold uppercase tracking-[0.3em] mb-12">{t.footer.rights}</p>
           <button onClick={() => scrollToSection('top')} className="p-5 bg-emerald-600 rounded-full text-white shadow-2xl shadow-emerald-600/30 hover:scale-110 transition-all">
-            <ArrowUpCircle size={32}/>
+            <ArrowUpCircle size={32} />
           </button>
         </div>
       </footer>
@@ -389,19 +389,19 @@ const App: React.FC = () => {
       <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 w-[95%] max-w-lg z-[150] md:hidden">
         <div className={`${themeStyles.nav} backdrop-blur-3xl border border-white/20 rounded-[3rem] p-3 flex justify-around items-center shadow-2xl`}>
           <button onClick={() => scrollToSection('top')} className="p-3 text-slate-400 hover:text-emerald-500 transition-colors">
-            <Home size={22}/>
+            <Home size={22} />
           </button>
           <button onClick={() => scrollToSection('skills')} className="p-3 text-slate-400 hover:text-emerald-500 transition-colors">
-            <LayoutGrid size={22}/>
+            <LayoutGrid size={22} />
           </button>
           <button onClick={() => scrollToSection('education')} className="p-3 text-slate-400 hover:text-emerald-500 transition-colors">
-            <GraduationCap size={22}/>
+            <GraduationCap size={22} />
           </button>
           <a href="https://sa.linkedin.com/in/falsanea" target="_blank" rel="noopener noreferrer" className="p-3 text-slate-400 hover:text-[#0077b5] transition-colors">
-            <Linkedin size={22}/>
+            <Linkedin size={22} />
           </a>
           <button onClick={() => setIsResumeOpen(true)} className="p-3 bg-emerald-600 text-white rounded-full shadow-lg">
-            <FileText size={22}/>
+            <FileText size={22} />
           </button>
         </div>
       </nav>
@@ -410,8 +410,8 @@ const App: React.FC = () => {
       <AnimatePresence>
         {isResumeOpen && (
           <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setIsResumeOpen(false)} className="absolute inset-0 bg-black/95 backdrop-blur-xl" />
-            <motion.div initial={{opacity:0, scale:0.95, y: 20}} animate={{opacity:1, scale:1, y: 0}} exit={{opacity:0, scale:0.95, y: 20}} className="relative w-full max-w-5xl bg-slate-100 rounded-[1.5rem] shadow-2xl overflow-hidden border border-white/10">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setIsResumeOpen(false)} className="absolute inset-0 bg-black/95 backdrop-blur-xl" />
+            <motion.div initial={{ opacity: 0, scale: 0.95, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.95, y: 20 }} className="relative w-full max-w-5xl bg-slate-100 rounded-[1.5rem] shadow-2xl overflow-hidden border border-white/10">
               <div className="flex items-center justify-between p-6 bg-slate-900 border-b border-white/10 text-white">
                 <div className="flex items-center gap-4">
                   <FileText className="text-emerald-500" size={28} />
@@ -419,22 +419,23 @@ const App: React.FC = () => {
                     <h4 className="font-black text-lg uppercase tracking-tight">FAISAL ALSANEA - RESUME</h4>
                   </div>
                 </div>
-                <button onClick={()=>setIsResumeOpen(false)} className="p-3 bg-red-500/20 text-red-400 rounded-xl hover:bg-red-500 hover:text-white transition-all">
-                  <X size={24}/>
+                <button onClick={() => setIsResumeOpen(false)} className="p-3 bg-red-500/20 text-red-400 rounded-xl hover:bg-red-500 hover:text-white transition-all">
+                  <X size={24} />
                 </button>
               </div>
-              
-              <div id="resume-document" className="h-[75vh] overflow-y-auto bg-white p-6 md:p-12 text-slate-900 no-scrollbar font-serif leading-relaxed">
-                <div className="max-w-4xl mx-auto space-y-6 text-left">
+
+              {/* Force Desktop View on Mobile with min-w-[800px] and overflow-auto */}
+              <div id="resume-document" className="h-[75vh] overflow-auto bg-white p-6 md:p-12 text-slate-900 no-scrollbar font-serif leading-relaxed">
+                <div className="min-w-[800px] max-w-4xl mx-auto space-y-6 text-left">
                   {/* Header */}
                   <div className="text-center space-y-2 pb-4 border-b border-slate-300">
                     <h1 className="text-4xl font-serif font-bold tracking-widest uppercase">FAISAL ALSANEA</h1>
-                    <p className="text-lg italic text-slate-700">HR Specialist | Talent Acquisition & Operations Expert</p>
+                    <p className="text-lg italic text-slate-700">Talent Acquisition Specialist | Strategic Headhunting | Onboarding Expert</p>
                     <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-600 font-sans">
-                      <div className="flex items-center gap-2"><MapPin size={14}/> Jeddah, Saudi Arabia</div>
-                      <div className="flex items-center gap-2"><Phone size={14}/> +966 596995687</div>
-                      <div className="flex items-center gap-2"><Mail size={14}/> falsanea@aol.com</div>
-                      <div className="flex items-center gap-2"><Linkedin size={14}/> linkedin.com/in/falsanea</div>
+                      <div className="flex items-center gap-2"><MapPin size={14} /> Jeddah, Saudi Arabia</div>
+                      <div className="flex items-center gap-2"><Phone size={14} /> +966 596995687</div>
+                      <div className="flex items-center gap-2"><Mail size={14} /> falsanea@aol.com</div>
+                      <div className="flex items-center gap-2"><Linkedin size={14} /> linkedin.com/in/falsanea</div>
                     </div>
                   </div>
 
@@ -442,20 +443,18 @@ const App: React.FC = () => {
                   <section>
                     <h2 className="text-sm font-bold uppercase tracking-widest border-b border-slate-900 mb-3 pb-1">PROFILE SUMMARY</h2>
                     <p className="text-sm">
-                      Results-oriented HR Specialist with a proven track record in <b>Full-Cycle Recruitment</b> and <b>HR Operations</b>. 
-                      Improved recruitment efficiency by <b>25%</b> through structured evaluation and systematic <b>Record-Keeping</b>. 
-                      Expert in ensuring <b>100% compliance</b> with <b>Saudi Labor Law, GOSI, Muqeem, Qiwa, and Mudad</b>. 
-                      Leveraging a <b>Bachelor's Degree in English</b> for superior professional communication and stakeholder management.
+                      Results-oriented <b>Talent Acquisition Specialist</b> with a proven track record in <b>Full-Cycle Recruitment</b> and <b>Strategic Headhunting</b>. Currently at Kaki Group, I specialize in bridging the gap between complex organizational needs and high-performing talent. I leverage <b>AI-driven sourcing</b> and structured evaluation frameworks to improve recruitment efficiency by <b>25%</b>. Expert in designing <b>Strategic Onboarding</b> journeys that accelerate employee integration and productivity.
                     </p>
                   </section>
 
                   {/* Core HR Competencies */}
                   <section>
                     <h2 className="text-sm font-bold uppercase tracking-widest border-b border-slate-900 mb-3 pb-1">CORE HR COMPETENCIES</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 text-sm">
+                    {/* Fixed 2 columns even on mobile */}
+                    <div className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm">
                       <p><b>Talent Management:</b> Full-Cycle Recruitment, Strategic Sourcing, and Headhunting.</p>
-                      <p><b>Compliance:</b> Expert in Saudi Labor Law and policy implementation.</p>
                       <p><b>HR Operations:</b> Onboarding & Offboarding, Employee Relations, and Payroll Coordination.</p>
+                      <p><b>Employee Integration:</b> Designing high-impact onboarding journeys focused on cultural and professional alignment.</p>
                       <p><b>Development:</b> Performance Management, Talent Screening, and Employee Development Programs.</p>
                     </div>
                   </section>
@@ -463,13 +462,13 @@ const App: React.FC = () => {
                   {/* Professional Work Experience */}
                   <section>
                     <h2 className="text-sm font-bold uppercase tracking-widest border-b border-slate-900 mb-4 pb-1">PROFESSIONAL WORK EXPERIENCE</h2>
-                    
+
                     {/* Kaki Group */}
                     <div className="mb-6">
                       <div className="flex justify-between items-start font-bold">
                         <div>
                           <h3 className="text-base uppercase tracking-tight">Kaki Group</h3>
-                          <p className="italic text-slate-700">HR Specialist</p>
+                          <p className="italic text-slate-700">Talent Acquisition & Strategic Headhunting Specialist</p>
                         </div>
                         <div className="text-right text-sm">
                           <p>April 2025 – Present</p>
@@ -477,9 +476,10 @@ const App: React.FC = () => {
                         </div>
                       </div>
                       <ul className="list-disc list-inside mt-2 text-sm space-y-1 pl-4">
-                        <li><b>Recruitment Optimization:</b> Enhanced recruitment process efficiency by <b>25%</b> through structured Candidate Evaluation frameworks.</li>
-                        <li><b>Talent Sourcing:</b> Oversaw the Full-Cycle Recruitment process, conducting <b>50+ screening calls</b> monthly to assess candidate qualifications.</li>
-                        <li><b>Compliance:</b> Directed <b>100% adherence</b> to Saudi Labor Law, managing internal audits for all employee records.</li>
+                        <li><b>Strategic Sourcing & Headhunting:</b> Lead the end-to-end recruitment cycle for <b>15+ specialized roles</b>, employing advanced <b>Headhunting</b> techniques to engage high-value passive candidates, resulting in a <b>20% reduction in time-to-hire</b>.</li>
+                        <li><b>AI-Driven Innovation:</b> Architected and implemented custom <b>AI-powered screening tools</b> and evaluation frameworks to automate candidate ranking, ensuring data-driven hiring decisions.</li>
+                        <li><b>Strategic Onboarding & Integration:</b> Designed a high-impact <b>Onboarding journey</b> focusing on cultural alignment and professional readiness, significantly improving early-stage retention rates.</li>
+                        <li><b>Candidate Experience Management:</b> Optimized the recruitment funnel and <b>ATS platforms</b> to ensure a premium candidate journey and enhance the company's employer brand.</li>
                       </ul>
                     </div>
 
@@ -497,7 +497,7 @@ const App: React.FC = () => {
                       </div>
                       <ul className="list-disc list-inside mt-2 text-sm space-y-1 pl-4">
                         <li><b>System Optimization:</b> Spearheaded the creation of secure filing systems for <b>500+ records</b>, improving retrieval efficiency by <b>40%</b>.</li>
-                        <li><b>Logistics Management:</b> Administered complex travel coordination and calendar scheduling for <b>5 senior executives</b>, reducing booking errors to zero.</li>
+                        <li><b>Logistics Management:</b> Administered complex travel coordination and calendar scheduling for <b>2 senior executives</b>, reducing booking errors to zero.</li>
                         <li><b>Documentation:</b> Facilitated HR support by drafting <b>100+ official documents</b>, including offer letters and internal memos.</li>
                       </ul>
                     </div>
@@ -506,18 +506,18 @@ const App: React.FC = () => {
                   {/* Projects & Academic Training */}
                   <section>
                     <div className="flex justify-between items-start font-bold mb-3 border-b border-slate-900 pb-1 uppercase tracking-widest">
-                       <h2 className="text-sm">PROJECTS & ACADEMIC TRAINING</h2>
-                       <div className="text-right text-sm">
-                          <p>Feb 2020 – Sept 2021</p>
-                       </div>
+                      <h2 className="text-sm">PROJECTS & ACADEMIC TRAINING</h2>
+                      <div className="text-right text-sm">
+                        <p>Feb 2020 – Sept 2021</p>
+                      </div>
                     </div>
                     <div className="mb-2">
                       <h3 className="text-sm font-bold italic">King Abdulaziz University | Research Methods & Practical Training</h3>
                       <ul className="list-disc list-inside mt-2 text-sm space-y-1 pl-4">
                         <li><b>Practical Training:</b> Completed an intensive <b>40-hour</b> training project focused on modern educational methodologies and <b>Training of Trainers (TOT)</b>.</li>
-                        <li><b>Persuasion & Communication:</b> Mastered the 4 steps of persuasion (Listening, Reading Ideas, Information Simplification) to enhance professional stakeholder engagement.</li>
-                        <li><b>Resilience:</b> Successfully managed research deliverables during the COVID-19 pandemic, demonstrating strong adaptability and remote collaboration skills.</li>
-                        <li><b>Conflict Resolution:</b> Developed a rational approach to handling difficult situations and stress management, ensuring 100% project completion.</li>
+                        <li><b>Persuasion & Communication:</b> Mastered the 4 steps of persuasion (Listening, Reading Ideas, Information Simplification) to enhance <b>professional stakeholder engagement</b>.</li>
+                        <li><b>Resilience:</b> Successfully managed research deliverables during the COVID-19 pandemic, demonstrating strong <b>adaptability and remote collaboration</b> skills.</li>
+                        <li><b>Conflict Resolution:</b> Developed a rational approach to handling difficult situations and <b>stress management</b>, ensuring 100% project completion.</li>
                       </ul>
                     </div>
                   </section>
@@ -527,14 +527,14 @@ const App: React.FC = () => {
                     <h2 className="text-sm font-bold uppercase tracking-widest border-b border-slate-900 mb-4 pb-1">EDUCATION & CERTIFICATIONS</h2>
                     <div className="space-y-4 text-sm">
                       <div className="flex justify-between font-bold italic">
-                        <p>King Abdulaziz University | Jeddah, Saudi Arabia <br/><span className="not-italic font-normal">Bachelor's Degree in English Language</span></p>
+                        <p>King Abdulaziz University | Jeddah, Saudi Arabia <br /><span className="not-italic font-normal">Bachelor's Degree in English Language</span></p>
                         <p>January 2022</p>
                       </div>
                       <div className="font-bold italic">
-                        <p>Oxford International Study Centre | United Kingdom <br/><span className="not-italic font-normal">Talent Acquisition Certified</span></p>
+                        <p>Oxford International Study Centre | United Kingdom <br /><span className="not-italic font-normal">Talent Acquisition Certified</span></p>
                       </div>
                       <div className="font-bold italic">
-                        <p>Cambridge International Qualifications (CIQ) | United Kingdom <br/><span className="not-italic font-normal">Essentials of International Human Resources Management</span></p>
+                        <p>Cambridge International Qualifications (CIQ) | United Kingdom <br /><span className="not-italic font-normal">Essentials of International Human Resources Management</span></p>
                       </div>
                     </div>
                   </section>
@@ -542,10 +542,11 @@ const App: React.FC = () => {
                   {/* Technical Skills */}
                   <section>
                     <h2 className="text-sm font-bold uppercase tracking-widest border-b border-slate-900 mb-3 pb-1">TECHNICAL SKILLS</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-                      <p><b>Governmental Portals:</b> GOSI, Muqeem, Qiwa, and Mudad platforms.</p>
-                      <p><b>HR Software:</b> CRM Systems, ATS Platforms (like FlowCV), and HRIS.</p>
-                      <p><b>Productivity:</b> Microsoft Office Suite (Excel, Word) and Google Workspace.</p>
+                    {/* Fixed 3 columns even on mobile */}
+                    <div className="grid grid-cols-3 gap-6 text-sm">
+                      <p><b>Recruitment Tech:</b> ATS Platforms, AI Sourcing Tools, and CRM Systems.</p>
+                      <p><b>Productivity:</b> Microsoft Excel (Advanced Analytics), Google Workspace.</p>
+                      <p><b>AI-Powered Sourcing:</b> Architecting custom <b>AI tools</b> for candidate screening and automated ranking.</p>
                     </div>
                   </section>
 
@@ -566,10 +567,10 @@ const App: React.FC = () => {
                 </div>
                 <div className="flex gap-4 w-full sm:w-auto">
                   <button onClick={() => window.print()} className="flex-1 sm:flex-none border border-white/20 px-8 py-4 rounded-xl font-bold text-xs hover:bg-white/10 transition-all flex items-center justify-center gap-2">
-                    <Printer size={18}/> PRINT DOCUMENT
+                    <Printer size={18} /> PRINT DOCUMENT
                   </button>
                   <button onClick={() => window.print()} className="flex-1 sm:flex-none bg-emerald-600 px-10 py-4 rounded-xl font-bold text-xs text-white shadow-xl hover:bg-emerald-700 transition-all flex items-center justify-center gap-2">
-                    <Download size={18}/> {t.hero.btn_download}
+                    <Download size={18} /> {t.hero.btn_download}
                   </button>
                 </div>
               </div>

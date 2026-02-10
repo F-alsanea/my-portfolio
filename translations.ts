@@ -1,0 +1,1 @@
+// Deprecated: All translations moved to main App.tsx to ensure a single-file application.
