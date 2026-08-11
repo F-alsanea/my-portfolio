@@ -8,3 +8,24 @@ Port 3000 is in use, trying another one...
 
   ➜  Local:   http://localhost:3001/
   ➜  Network: http://192.168.0.2:3001/
+8:57:51 PM [vite] (client) page reload index.html
+9:04:59 PM [vite] (client) hmr update /App.tsx
+9:05:04 PM [vite] (client) hmr update /App.tsx
+9:05:48 PM [vite] (client) hmr update /App.tsx
+9:06:58 PM [vite] (client) hmr update /App.tsx
+9:07:32 PM [vite] (client) hmr update /App.tsx
+9:10:12 PM [vite] (client) hmr update /App.tsx
+9:11:19 PM [vite] (client) hmr update /App.tsx
+9:12:34 PM [vite] (client) hmr update /App.tsx
+9:13:26 PM [vite] (client) hmr update /App.tsx
+9:14:34 PM [vite] (client) hmr update /App.tsx
+9:15:23 PM [vite] (client) hmr update /App.tsx
+9:16:19 PM [vite] (client) hmr update /App.tsx
+9:17:19 PM [vite] (client) hmr update /App.tsx
+9:18:12 PM [vite] (client) hmr update /App.tsx
+9:19:17 PM [vite] (client) hmr update /App.tsx
+9:20:16 PM [vite] (client) hmr update /App.tsx
+9:21:09 PM [vite] (client) hmr update /App.tsx
+9:22:05 PM [vite] (client) hmr update /App.tsx
+9:23:14 PM [vite] (client) hmr update /App.tsx
+9:24:19 PM [vite] (client) hmr update /App.tsx

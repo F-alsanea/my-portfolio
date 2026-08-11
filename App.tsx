@@ -33,7 +33,7 @@ const translations = {
       cta_primary: "Connect With Me",
       cta_secondary: "View Resume",
       happy_clients: "+99 Happy Candidates",
-      partners: ["Sana", "Nawah", "Madar", "Nabd", "Afaq", "Rawafed"]
+      expertise_tags: ["Talent Acquisition", "Sourcing", "Onboarding", "ATS Optimization", "Candidate Care"]
     },
     about: {
       title: "I build exceptional teams through high-impact recruitment.",
@@ -83,39 +83,39 @@ const translations = {
       ]
     },
     testimonials: {
-      title: "Genuine Feedback",
-      subtitle: "From Candidates & Hiring Managers",
-      rating_text: "+99 Happy Professional Reviews",
+      title: "Professional Recommendations",
+      subtitle: "Feedback on Sourcing, Onboarding & Process Design",
+      rating_text: "+99 Successful Placements",
       list: [
         {
           quote: "Faisal made my career transition exceptionally smooth. His guidance, communication, and professionalism during the entire hiring process were outstanding.",
           author: "Yousef Al-Salem",
-          role: "Product Manager at Afaq"
+          role: "Product Manager"
         },
         {
           quote: "The recruitment cycle Faisal designed was swift and transparent. He understands technical needs perfectly and is remarkably structured.",
           author: "Abdullah Al-Qahtani",
-          role: "Nawah Studio Founder"
+          role: "Technical Founder"
         },
         {
           quote: "His attention to the candidate's journey and matching cultural values set him apart. The best onboarding experience I've had.",
           author: "Fahad Al-Dossari",
-          role: "Creative Director at Roya"
+          role: "Creative Director"
         },
         {
           quote: "Faisal helped us streamline complex technical hirings under tight deadlines. Highly cooperative and thoroughly professional.",
           author: "Khaled Al-Otaibi",
-          role: "HR Partner at Nawat"
+          role: "HR Business Partner"
         },
         {
           quote: "Faisal's ability to locate highly specialized passive candidates for our team was impressive. He is an exceptional headhunter.",
           author: "Omar Al-Abdullah",
-          role: "CEO at Madar Studio"
+          role: "Executive Director"
         },
         {
           quote: "He redesigned our onboarding journey, resulting in faster integration and higher early-stage retention. A true expert.",
           author: "Samer Al-Harbi",
-          role: "CTO at Masar Co."
+          role: "Engineering Director"
         }
       ]
     },
@@ -264,7 +264,7 @@ const translations = {
       cta_primary: "تواصل معي",
       cta_secondary: "السيرة الذاتية",
       happy_clients: "+99 مرشح سعيد",
-      partners: ["سنا", "نواة", "مدار", "نبض", "أفق", "روافد"]
+      expertise_tags: ["استقطاب المواهب", "التهيئة والاندماج", "الصيد الاستراتيجي", "أنظمة التتبع (ATS)", "رحلة المرشح"]
     },
     about: {
       title: "أبني فرق عمل استثنائية من خلال عمليات توظيف ذات أثر ملموس.",
@@ -314,39 +314,39 @@ const translations = {
       ]
     },
     testimonials: {
-      title: "كلمات صادقة",
-      subtitle: "من المرشحين ومدراء الإدارات الذين عملت معهم",
-      rating_text: "+99 مرشح سعيد",
+      title: "توصيات مهنية",
+      subtitle: "آراء وانطباعات الزملاء والشركاء حول جودة الاستقطاب والتهيئة",
+      rating_text: "+99 توصية ناجحة",
       list: [
         {
           quote: "جعل فيصل انتقالي المهني سلسًا للغاية. كان توجيهه وتواصله واحترافيته طوال عملية التوظيف بأكملها متميزًا حقًا.",
           author: "يوسف السالم",
-          role: "مدير منتج في أفق"
+          role: "مدير منتج"
         },
         {
-          quote: "دورة التوظيف التي صممها فيصل كانت سريعة وشفافة. إنه يفهم المتطلبات التقنية تماماً ومنظم بشكل لافت للنظر.",
+          quote: "دورة التوظيف التي صممها فيصل كانت سريعة وشفافة. إنه يفهم المتطلبات المهنية تماماً ومنظم بشكل لافت للنظر.",
           author: "عبدالله القحطاني",
-          role: "مؤسس استوديو نواة"
+          role: "مؤسس تقني"
         },
         {
           quote: "اهتمامه برحلة المرشح ومطابقة القيم الثقافية للشركة يميزه عن غيره. كانت أفضل تجربة تهيئة واندماج عشتها على الإطلاق.",
           author: "فهد الدوسري",
-          role: "المدير الإبداعي في رؤى"
+          role: "مدير إبداعي"
         },
         {
           quote: "ساعدنا فيصل في تبسيط التوظيفات التقنية المعقدة في ظل مواعيد نهائية ضيقة. متعاون للغاية ومحترف تمامًا.",
           author: "خالد العتيبي",
-          role: "شريك الموارد البشرية في منصة نواة"
+          role: "شريك أعمال الموارد البشرية"
         },
         {
           quote: "قدرة فيصل على الوصول إلى الكفاءات النادرة وغير النشطة في البحث عن عمل كانت مبهرة. إنه صياد كفاءات استثنائي.",
           author: "عمر العبدالله",
-          role: "الرئيس التنفيذي لاستوديو مدار"
+          role: "مدير تنفيذي"
         },
         {
           quote: "لقد أعاد تصميم رحلة التهيئة والاندماج الخاصة بنا، مما أدى إلى تسريع اندماج الموظفين وزيادة معدل استبقائهم في المراحل الأولى. خبير حقيقي.",
           author: "سامر الحربي",
-          role: "المدير التقني في شركة مسار"
+          role: "مدير هندسة البرمجيات"
         }
       ]
     },
@@ -484,13 +484,14 @@ const App: React.FC = () => {
   const [activeScreenTab, setActiveScreenTab] = useState<number>(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [lightboxImageIndex, setLightboxImageIndex] = useState<number>(0);
+  const [isDark, setIsDark] = useState(false);
 
   const t = translations[lang];
 
   useEffect(() => {
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.className = 'light'; // Always light theme for minimalist look
-  }, [lang]);
+    document.documentElement.className = isDark ? 'dark' : 'light';
+  }, [lang, isDark]);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -501,7 +502,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 transition-colors duration-500 font-sans selection:bg-black/10 overflow-x-hidden bg-dot-pattern relative">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-500 font-sans selection:bg-black/10 dark:selection:bg-white/10 overflow-x-hidden bg-dot-pattern relative">
 
       {/* Print View Specific Style Tag */}
       <style>{`
@@ -537,9 +538,9 @@ const App: React.FC = () => {
         <div className="pointer-events-auto">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg flex items-center justify-center border border-slate-100 transition-all cursor-pointer"
+            className="w-12 h-12 rounded-full bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 shadow-md hover:shadow-lg flex items-center justify-center border border-slate-100 dark:border-slate-800 transition-all cursor-pointer"
           >
-            <Menu size={20} className="text-slate-800" />
+            <Menu size={20} />
           </button>
         </div>
 
@@ -547,17 +548,23 @@ const App: React.FC = () => {
         <div className="pointer-events-auto flex items-center gap-3">
           <button
             onClick={() => setLang(lang === 'ar' ? 'en' : 'ar')}
-            className="px-4 py-2 bg-white/80 backdrop-blur-md text-slate-800 rounded-full font-bold text-xs border border-slate-100 shadow-sm hover:shadow-md transition-all cursor-pointer"
+            className="px-4 py-2 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-slate-800 dark:text-slate-100 rounded-full font-bold text-xs border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all cursor-pointer"
           >
             {lang === 'en' ? 'العربية' : 'English'}
+          </button>
+          <button
+            onClick={() => setIsDark(!isDark)}
+            className="w-10 h-10 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-slate-800 dark:text-slate-100 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md flex items-center justify-center transition-all cursor-pointer"
+          >
+            {isDark ? <Sun size={16} /> : <Moon size={16} />}
           </button>
         </div>
 
         {/* Profile Card Widget (Right Side) */}
-        <div className="pointer-events-auto hidden md:flex items-center gap-3 bg-white/90 backdrop-blur-md py-1.5 px-3 rounded-full border border-slate-100 shadow-sm">
+        <div className="pointer-events-auto hidden md:flex items-center gap-3 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md py-1.5 px-3 rounded-full border border-slate-100 dark:border-slate-800 shadow-sm">
           <div className="text-start">
-            <h4 className="text-xs font-black leading-tight text-slate-900">{t.hero.name}</h4>
-            <p className="text-[10px] text-slate-500 font-bold">{t.nav.role}</p>
+            <h4 className="text-xs font-black leading-tight text-slate-900 dark:text-white">{t.hero.name}</h4>
+            <p className="text-[10px] text-slate-500 dark:text-slate-400 font-bold">{t.nav.role}</p>
           </div>
           <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-slate-200 to-slate-100 border border-slate-200 flex items-center justify-center font-bold text-slate-700 text-sm overflow-hidden shadow-inner">
             <img src="/faisal-photo.jpg" alt={t.hero.fullname} className="w-full h-full object-cover" />
@@ -582,29 +589,29 @@ const App: React.FC = () => {
               animate={{ x: 0 }}
               exit={{ x: lang === 'ar' ? '100%' : '-100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className={`fixed top-0 bottom-0 ${lang === 'ar' ? 'right-0' : 'left-0'} w-80 bg-white shadow-2xl z-[251] p-8 flex flex-col justify-between`}
+              className={`fixed top-0 bottom-0 ${lang === 'ar' ? 'right-0' : 'left-0'} w-80 bg-white dark:bg-slate-900 dark:text-white shadow-2xl z-[251] p-8 flex flex-col justify-between`}
             >
               <div>
                 <div className="flex justify-between items-center mb-12">
                   <span className="font-black text-xl tracking-tighter">{t.hero.fullname}</span>
-                  <button onClick={() => setIsMenuOpen(false)} className="p-2 hover:bg-slate-100 rounded-full transition-all">
+                  <button onClick={() => setIsMenuOpen(false)} className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-all">
                     <X size={20} />
                   </button>
                 </div>
 
                 <nav className={`flex flex-col gap-6 text-lg font-bold ${lang === 'ar' ? 'text-right' : 'text-left'}`}>
-                  <button onClick={() => scrollToSection('hero')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 transition-colors`}>{t.nav.home}</button>
-                  <button onClick={() => scrollToSection('about')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 transition-colors`}>{t.nav.about}</button>
-                  <button onClick={() => scrollToSection('projects')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 transition-colors`}>{lang === 'ar' ? 'أعمالي' : 'Projects'}</button>
-                  <button onClick={() => scrollToSection('expertise')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 transition-colors`}>{t.nav.expertise}</button>
-                  <button onClick={() => scrollToSection('testimonials')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 transition-colors`}>{t.nav.testimonials}</button>
+                  <button onClick={() => scrollToSection('hero')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 dark:hover:text-slate-400 transition-colors`}>{t.nav.home}</button>
+                  <button onClick={() => scrollToSection('about')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 dark:hover:text-slate-400 transition-colors`}>{t.nav.about}</button>
+                  <button onClick={() => scrollToSection('projects')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 dark:hover:text-slate-400 transition-colors`}>{lang === 'ar' ? 'أعمالي' : 'Projects'}</button>
+                  <button onClick={() => scrollToSection('expertise')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 dark:hover:text-slate-400 transition-colors`}>{t.nav.expertise}</button>
+                  <button onClick={() => scrollToSection('testimonials')} className={`${lang === 'ar' ? 'text-right' : 'text-left'} hover:text-slate-500 dark:hover:text-slate-400 transition-colors`}>{t.nav.testimonials}</button>
                 </nav>
               </div>
 
               <div className="space-y-4">
                 <button
                   onClick={() => { setIsResumeOpen(true); setIsMenuOpen(false); }}
-                  className="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-slate-800 transition-all flex items-center justify-center gap-2"
+                  className="w-full py-4 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-950 rounded-2xl font-bold hover:bg-slate-800 dark:hover:bg-slate-200 transition-all flex items-center justify-center gap-2"
                 >
                   <FileText size={18} />
                   {t.nav.resume}
@@ -624,7 +631,7 @@ const App: React.FC = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-7xl md:text-[10rem] font-bold tracking-tight text-slate-900 select-none pb-2 leading-none"
+            className="text-7xl md:text-[10rem] font-bold tracking-tight text-slate-900 dark:text-white select-none pb-2 leading-none"
             style={{ fontFamily: '"Readex Pro", sans-serif' }}
           >
             {t.hero.name}
@@ -637,7 +644,7 @@ const App: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-4 max-w-2xl mx-auto"
           >
-            <p className="text-base md:text-lg text-slate-600 font-medium leading-relaxed">
+            <p className="text-base md:text-lg text-slate-600 dark:text-slate-300 font-medium leading-relaxed">
               {lang === 'ar' ? t.hero.desc : t.hero.subtitle}
             </p>
           </motion.div>
@@ -651,13 +658,13 @@ const App: React.FC = () => {
           >
             <a
               href="mailto:falsanea@aol.com"
-              className="px-8 py-4 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl flex items-center gap-2 text-sm md:text-base cursor-pointer"
+              className="px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full font-semibold hover:bg-slate-800 dark:hover:bg-slate-100 transition-all shadow-xl hover:shadow-2xl flex items-center gap-2 text-sm md:text-base cursor-pointer"
             >
               {t.hero.cta_primary}
             </a>
             <button
               onClick={() => setIsResumeOpen(true)}
-              className="px-8 py-4 bg-white text-slate-800 border border-slate-200 rounded-full font-semibold hover:bg-slate-50 transition-all shadow-md hover:shadow-lg flex items-center gap-2 text-sm md:text-base cursor-pointer"
+              className="px-8 py-4 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800 rounded-full font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2 text-sm md:text-base cursor-pointer"
             >
               {t.hero.cta_secondary}
             </button>
@@ -668,21 +675,21 @@ const App: React.FC = () => {
         {/* Hero Bottom Bar (IMG_0079.jpeg footer part) */}
         <div className="absolute bottom-8 left-0 right-0 w-full px-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 pointer-events-none">
 
-          {/* Grayscale Partners */}
-          <div className="flex flex-wrap justify-center md:justify-start items-center gap-6 opacity-40 pointer-events-auto">
-            {t.hero.partners.map((partner, i) => (
-              <span key={i} className="text-sm font-bold tracking-widest text-slate-600 uppercase">
-                {partner}
+          {/* Expertise Pillars / Badges instead of partners */}
+          <div className="flex flex-wrap justify-center md:justify-start items-center gap-3 pointer-events-auto">
+            {t.hero.expertise_tags.map((tag, i) => (
+              <span key={i} className="px-3.5 py-1.5 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-100 dark:border-slate-800 rounded-full text-xs font-black text-slate-500 dark:text-slate-400 shadow-sm uppercase tracking-wide">
+                {tag}
               </span>
             ))}
           </div>
 
           {/* Client Reviews Badges */}
-          <div className="flex items-center gap-3 bg-white/80 backdrop-blur-md py-2 px-4 rounded-full border border-slate-100 shadow-sm pointer-events-auto">
+          <div className="flex items-center gap-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md py-2 px-4 rounded-full border border-slate-100 dark:border-slate-800 shadow-sm pointer-events-auto">
             <div className="flex -space-x-2">
               {[1, 2, 3, 4].map((num) => (
-                <div key={num} className="w-7 h-7 rounded-full bg-slate-200 border-2 border-white overflow-hidden flex items-center justify-center font-bold text-[8px] text-slate-600">
-                  <UserCircle size={28} className="text-slate-400 bg-slate-100" />
+                <div key={num} className="w-7 h-7 rounded-full bg-slate-200 dark:bg-slate-800 border-2 border-white dark:border-slate-950 overflow-hidden flex items-center justify-center font-bold text-[8px] text-slate-600 dark:text-slate-400">
+                  <UserCircle size={28} className="text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800" />
                 </div>
               ))}
             </div>
@@ -692,7 +699,7 @@ const App: React.FC = () => {
                   <span key={star} className="text-xs">★</span>
                 ))}
               </div>
-              <span className="text-[10px] font-bold text-slate-600 leading-none">{t.hero.happy_clients}</span>
+              <span className="text-[10px] font-bold text-slate-600 dark:text-slate-300 leading-none">{t.hero.happy_clients}</span>
             </div>
           </div>
 
@@ -700,32 +707,32 @@ const App: React.FC = () => {
       </section>
 
       {/* --- Interactive Projects Showcase Section (High Fidelity system walkthrough) --- */}
-      <section id="projects" className="py-24 px-6 max-w-7xl mx-auto border-t border-slate-100 bg-white/40 rounded-3xl my-12 relative overflow-hidden">
+      <section id="projects" className="py-24 px-6 max-w-7xl mx-auto border-t border-slate-100 dark:border-slate-800 bg-white/40 dark:bg-slate-900/10 rounded-3xl my-12 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/30 rounded-full blur-3xl -z-10" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-100/20 rounded-full blur-3xl -z-10" />
 
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 border border-blue-100 rounded-full">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-900/50 rounded-full">
             <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-            <span className="text-[10px] font-bold text-blue-800 uppercase tracking-widest">{t.projects.view_system}</span>
+            <span className="text-[10px] font-bold text-blue-800 dark:text-blue-300 uppercase tracking-widest">{t.projects.view_system}</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
             {t.projects.title}
           </h2>
-          <p className="text-slate-500 text-sm md:text-base font-medium max-w-2xl mx-auto">
+          <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base font-medium max-w-2xl mx-auto">
             {t.projects.subtitle}
           </p>
         </div>
 
         {/* System Overview Details Card */}
-        <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm mb-12 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-100 dark:border-slate-800 shadow-sm mb-12 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="space-y-4 text-start flex-1">
-            <h3 className="text-2xl font-bold text-slate-900">{t.projects.system_title}</h3>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">{t.projects.system_desc}</p>
+            <h3 className="text-2xl font-bold text-slate-900 dark:text-white">{t.projects.system_title}</h3>
+            <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed">{t.projects.system_desc}</p>
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             {['React.js', 'Tailwind CSS', 'Framer Motion', 'AI Screening', 'Dynamic Workflows'].map((tag, idx) => (
-              <span key={idx} className="px-3.5 py-1.5 bg-slate-50 border border-slate-100 rounded-xl text-xs font-bold text-slate-600">
+              <span key={idx} className="px-3.5 py-1.5 bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-800 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300">
                 {tag}
               </span>
             ))}
@@ -748,8 +755,8 @@ const App: React.FC = () => {
                 onClick={() => setActiveScreenTab(idx)}
                 className={`w-full text-start p-5 rounded-2xl border text-sm md:text-base font-bold transition-all flex items-center justify-between gap-4 cursor-pointer ${
                   activeScreenTab === idx
-                    ? 'bg-slate-900 border-slate-900 text-white shadow-xl shadow-slate-900/10'
-                    : 'bg-white hover:bg-slate-50 border-slate-100 text-slate-700 hover:text-slate-900'
+                    ? 'bg-slate-900 dark:bg-slate-100 border-slate-900 dark:border-slate-100 text-white dark:text-slate-950 shadow-xl shadow-slate-900/10'
+                    : 'bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 border-slate-100 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
                 <span>{tabLabel}</span>
@@ -815,13 +822,13 @@ const App: React.FC = () => {
                     </div>
 
                     {/* Meta description of the module */}
-                    <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm space-y-2 text-start">
+                    <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm space-y-2 text-start">
                       <div className="flex items-center gap-2 text-blue-600 text-xs font-bold uppercase tracking-wider">
                         <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                         <span>{screen.subtitle}</span>
                       </div>
-                      <h4 className="text-xl font-bold text-slate-900">{screen.title}</h4>
-                      <p className="text-slate-600 text-sm leading-relaxed">{screen.desc}</p>
+                      <h4 className="text-xl font-bold text-slate-900 dark:text-white">{screen.title}</h4>
+                      <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">{screen.desc}</p>
                     </div>
 
                   </motion.div>
@@ -904,26 +911,26 @@ const App: React.FC = () => {
       </AnimatePresence>
 
       {/* --- About & Career Path Section (IMG_0078.jpeg aesthetic) --- */}
-      <section id="about" className="py-24 px-6 max-w-7xl mx-auto border-t border-slate-100">
+      <section id="about" className="py-24 px-6 max-w-7xl mx-auto border-t border-slate-100 dark:border-slate-800">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
           {/* Left Column: Core Description & Brand Grid */}
           <div className="space-y-8 text-start">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight leading-tight">
               {t.about.title}
             </h2>
-            <div className="space-y-6 text-slate-600 text-sm md:text-base leading-relaxed">
+            <div className="space-y-6 text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed">
               <p>{t.about.para1}</p>
               <p>{t.about.para2}</p>
               <p>{t.about.para3}</p>
             </div>
 
             {/* Micro-interactive Systems/Technologies Grid (IMG_0078 bottom left icons) */}
-            <div className="pt-6 border-t border-slate-100">
+            <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
               <div className="flex flex-wrap gap-4 items-center opacity-60">
-                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{lang === 'ar' ? 'التقنيات التي أستخدمها:' : 'HR Tech Stack:'}</span>
+                <span className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">{lang === 'ar' ? 'التقنيات التي أستخدمها:' : 'HR Tech Stack:'}</span>
                 {['LinkedIn', 'Excel', 'Google Workspace', 'Zoom', 'ATS Platforms', 'AI Sourcing'].map((system, idx) => (
-                  <span key={idx} className="px-3 py-1.5 bg-white border border-slate-100 rounded-full text-xs font-semibold text-slate-600 shadow-sm">
+                  <span key={idx} className="px-3 py-1.5 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-300 shadow-sm">
                     {system}
                   </span>
                 ))}
@@ -935,8 +942,8 @@ const App: React.FC = () => {
           <div className="space-y-12">
 
             {/* Minimalist Profile Card (IMG_0078.jpeg design) */}
-            <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm space-y-6">
-              <div className="aspect-[4/3] rounded-2xl bg-gradient-to-tr from-slate-100 to-slate-50 border border-slate-200 flex items-center justify-center overflow-hidden relative shadow-inner">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm space-y-6">
+              <div className="aspect-[4/3] rounded-2xl bg-gradient-to-tr from-slate-100 to-slate-50 dark:from-slate-800 dark:to-slate-900 border border-slate-200 dark:border-slate-700 flex items-center justify-center overflow-hidden relative shadow-inner">
                 {/* Faisal's profile picture inside a modern rounded box */}
                 <img src="/faisal-photo.jpg" alt={t.hero.fullname} className="w-full h-full object-cover" />
 
@@ -954,23 +961,23 @@ const App: React.FC = () => {
 
               {/* Identity Footer inside Card */}
               <div className="text-start">
-                <h3 className="text-2xl font-bold text-slate-900 leading-tight">{t.hero.fullname}</h3>
-                <p className="text-xs font-bold text-slate-500 mt-1 uppercase tracking-wide">{t.hero.badge}</p>
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white leading-tight">{t.hero.fullname}</h3>
+                <p className="text-xs font-bold text-slate-500 dark:text-slate-400 mt-1 uppercase tracking-wide">{t.hero.badge}</p>
               </div>
             </div>
 
             {/* Career Path Timeline (IMG_0078.jpeg "المسار الذي سلكته") */}
             <div className="space-y-6 text-start">
-              <h3 className="text-xl font-bold text-slate-900 tracking-tight">{t.about.career_title}</h3>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">{t.about.career_title}</h3>
               <div className="space-y-4">
                 {t.about.jobs.map((job, idx) => (
-                  <div key={idx} className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm flex items-center justify-between gap-6 hover:shadow-md transition-all">
+                  <div key={idx} className="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 shadow-sm flex items-center justify-between gap-6 hover:shadow-md transition-all">
                     <div className="text-start space-y-1">
-                      <h4 className="font-bold text-slate-900 text-sm md:text-base">{job.company}</h4>
-                      <p className="text-xs text-slate-500 font-semibold">{job.role}</p>
+                      <h4 className="font-bold text-slate-900 dark:text-white text-sm md:text-base">{job.company}</h4>
+                      <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold">{job.role}</p>
                     </div>
                     <div className="text-end shrink-0">
-                      <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                      <span className="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-full text-[10px] font-bold uppercase tracking-wider">
                         {job.period}
                       </span>
                     </div>
@@ -985,12 +992,12 @@ const App: React.FC = () => {
       </section>
 
       {/* --- Expertise & Pill Design Section (IMG_0080.jpeg "كذا أقدر أساعدك") --- */}
-      <section id="expertise" className="py-24 px-6 max-w-7xl mx-auto border-t border-slate-100">
+      <section id="expertise" className="py-24 px-6 max-w-7xl mx-auto border-t border-slate-100 dark:border-slate-800">
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">
             {t.expertise.title}
           </h2>
-          <p className="text-slate-500 text-sm md:text-base">
+          <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base">
             {t.expertise.subtitle}
           </p>
         </div>
@@ -999,16 +1006,16 @@ const App: React.FC = () => {
 
           {/* Category 1: Orange Theme */}
           <div className="space-y-6 text-start">
-            <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest text-center md:text-start">
+            <h4 className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest text-center md:text-start">
               {t.expertise.cat1}
             </h4>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               {t.expertise.skills1.map((skill, i) => (
                 <div
                   key={i}
-                  className="bg-white border border-slate-100 rounded-full px-5 py-3 flex items-center gap-3 shadow-sm hover:shadow-md transition-all group cursor-pointer"
+                  className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-full px-5 py-3 flex items-center gap-3 shadow-sm hover:shadow-md transition-all group cursor-pointer"
                 >
-                  <span className="font-bold text-sm md:text-base text-slate-800">{skill.title}</span>
+                  <span className="font-bold text-sm md:text-base text-slate-800 dark:text-slate-200">{skill.title}</span>
                   <div className="w-6 h-6 rounded-full bg-orange-500 text-white flex items-center justify-center text-xs shadow-inner">
                     <Check size={12} strokeWidth={3} />
                   </div>
@@ -1019,16 +1026,16 @@ const App: React.FC = () => {
 
           {/* Category 2: Blue Theme */}
           <div className="space-y-6 text-start">
-            <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest text-center md:text-start">
+            <h4 className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest text-center md:text-start">
               {t.expertise.cat2}
             </h4>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               {t.expertise.skills2.map((skill, i) => (
                 <div
                   key={i}
-                  className="bg-white border border-slate-100 rounded-full px-5 py-3 flex items-center gap-3 shadow-sm hover:shadow-md transition-all group cursor-pointer"
+                  className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-full px-5 py-3 flex items-center gap-3 shadow-sm hover:shadow-md transition-all group cursor-pointer"
                 >
-                  <span className="font-bold text-sm md:text-base text-slate-800">{skill.title}</span>
+                  <span className="font-bold text-sm md:text-base text-slate-800 dark:text-slate-200">{skill.title}</span>
                   <div className="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs shadow-inner">
                     <Check size={12} strokeWidth={3} />
                   </div>
@@ -1039,16 +1046,16 @@ const App: React.FC = () => {
 
           {/* Category 3: Green Theme */}
           <div className="space-y-6 text-start">
-            <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest text-center md:text-start">
+            <h4 className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest text-center md:text-start">
               {t.expertise.cat3}
             </h4>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               {t.expertise.skills3.map((skill, i) => (
                 <div
                   key={i}
-                  className="bg-white border border-slate-100 rounded-full px-5 py-3 flex items-center gap-3 shadow-sm hover:shadow-md transition-all group cursor-pointer"
+                  className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-full px-5 py-3 flex items-center gap-3 shadow-sm hover:shadow-md transition-all group cursor-pointer"
                 >
-                  <span className="font-bold text-sm md:text-base text-slate-800">{skill.title}</span>
+                  <span className="font-bold text-sm md:text-base text-slate-800 dark:text-slate-200">{skill.title}</span>
                   <div className="w-6 h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs shadow-inner">
                     <Check size={12} strokeWidth={3} />
                   </div>
@@ -1061,20 +1068,20 @@ const App: React.FC = () => {
       </section>
 
       {/* --- Testimonials Carousel/Grid Section (IMG_0081.jpeg "كلمات صادقة من عملائي") --- */}
-      <section id="testimonials" className="py-24 px-6 max-w-7xl mx-auto border-t border-slate-100 bg-white/20">
+      <section id="testimonials" className="py-24 px-6 max-w-7xl mx-auto border-t border-slate-100 dark:border-slate-800 bg-white/20">
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 border border-amber-100 rounded-full">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 dark:bg-amber-900/30 border border-amber-100 dark:border-amber-900/50 rounded-full">
             <div className="flex items-center gap-0.5 text-amber-500 text-xs">
               {[1, 2, 3, 4, 5].map((star) => (
                 <span key={star}>★</span>
               ))}
             </div>
-            <span className="text-[10px] font-bold text-amber-800">{t.testimonials.rating_text}</span>
+            <span className="text-[10px] font-bold text-amber-800 dark:text-amber-300">{t.testimonials.rating_text}</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">
             {t.testimonials.title}
           </h2>
-          <p className="text-slate-500 text-sm md:text-base">
+          <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base">
             {t.testimonials.subtitle}
           </p>
         </div>
@@ -1084,24 +1091,24 @@ const App: React.FC = () => {
           {t.testimonials.list.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm flex flex-col justify-between space-y-8 hover:shadow-md transition-all"
+              className="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between space-y-8 hover:shadow-md transition-all"
             >
               {/* Quote Mark Icon */}
-              <div className="text-slate-300 text-5xl font-serif select-none leading-none">“</div>
+              <div className="text-slate-300 dark:text-slate-700 text-5xl font-serif select-none leading-none">“</div>
 
               {/* Quote Paragraph */}
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed text-start font-medium">
+              <p className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed text-start font-medium">
                 {item.quote}
               </p>
 
               {/* Author Info */}
-              <div className="flex items-center justify-start gap-3 pt-6 border-t border-slate-100">
-                <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center overflow-hidden">
-                  <UserCircle size={28} className="text-slate-400" />
+              <div className="flex items-center justify-start gap-3 pt-6 border-t border-slate-100 dark:border-slate-800">
+                <div className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+                  <UserCircle size={28} className="text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800" />
                 </div>
                 <div className="text-start">
-                  <h4 className="font-bold text-slate-900 text-sm">{item.author}</h4>
-                  <p className="text-xs text-slate-400 font-semibold">{item.role}</p>
+                  <h4 className="font-bold text-slate-900 dark:text-white text-sm">{item.author}</h4>
+                  <p className="text-xs text-slate-400 dark:text-slate-500 font-semibold">{item.role}</p>
                 </div>
               </div>
             </div>
@@ -1110,17 +1117,17 @@ const App: React.FC = () => {
       </section>
 
       {/* --- Footer & Quick Links Section --- */}
-      <footer className="py-12 px-6 border-t border-slate-100 bg-white">
+      <footer className="py-12 px-6 border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-start">
-            <h4 className="text-lg font-black text-slate-900">{t.hero.fullname}</h4>
-            <p className="text-xs text-slate-500 font-bold">{t.hero.badge}</p>
+            <h4 className="text-lg font-black text-slate-900 dark:text-white">{t.hero.fullname}</h4>
+            <p className="text-xs text-slate-500 dark:text-slate-400 font-bold">{t.hero.badge}</p>
           </div>
           <div className="flex gap-4">
-            <a href="https://sa.linkedin.com/in/falsanea" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-50 rounded-full hover:bg-slate-100 transition-colors text-slate-600">
+            <a href="https://sa.linkedin.com/in/falsanea" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-50 dark:bg-slate-900 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400">
               <Linkedin size={18} />
             </a>
-            <a href="mailto:falsanea@aol.com" className="p-3 bg-slate-50 rounded-full hover:bg-slate-100 transition-colors text-slate-600">
+            <a href="mailto:falsanea@aol.com" className="p-3 bg-slate-50 dark:bg-slate-900 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-400">
               <Mail size={18} />
             </a>
           </div>
@@ -1140,30 +1147,30 @@ const App: React.FC = () => {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className="relative w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100 flex flex-col no-print"
+              className="relative w-full max-w-5xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl overflow-hidden border border-slate-100 dark:border-slate-800 flex flex-col no-print"
             >
 
               {/* Header Bar */}
-              <div className="p-6 bg-slate-50 border-b border-slate-100 flex justify-between items-center">
+              <div className="p-6 bg-slate-50 dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
                 <div className="text-right">
-                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-wide">
+                  <h3 className="text-lg font-black text-slate-900 dark:text-white uppercase tracking-wide">
                     {t.resume_modal.title}
                   </h3>
-                  <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mt-0.5">
+                  <p className="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-widest mt-0.5">
                     {t.hero.badge}
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => window.print()}
-                    className="p-3 bg-white text-slate-700 rounded-full hover:bg-slate-50 border border-slate-100 transition-all flex items-center justify-center cursor-pointer shadow-sm"
+                    className="p-3 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 rounded-full hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-100 dark:border-slate-800 transition-all flex items-center justify-center cursor-pointer shadow-sm"
                     title={t.resume_modal.print}
                   >
                     <Printer size={16} />
                   </button>
                   <button
                     onClick={() => setIsResumeOpen(false)}
-                    className="p-3 bg-white text-slate-700 rounded-full hover:bg-slate-50 border border-slate-100 transition-all flex items-center justify-center cursor-pointer shadow-sm"
+                    className="p-3 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 rounded-full hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-100 dark:border-slate-800 transition-all flex items-center justify-center cursor-pointer shadow-sm"
                   >
                     <X size={16} />
                   </button>
@@ -1171,23 +1178,23 @@ const App: React.FC = () => {
               </div>
 
               {/* Document Page Canvas */}
-              <div className="p-8 md:p-12 overflow-y-auto max-h-[75vh] bg-slate-100/50">
+              <div className="p-8 md:p-12 overflow-y-auto max-h-[75vh] bg-slate-100/50 dark:bg-slate-950/50">
                 <div
                   id="printable-resume"
-                  className="bg-white rounded-2xl border border-slate-200/60 p-8 md:p-12 shadow-xl max-w-4xl mx-auto space-y-10 text-slate-900 text-start leading-relaxed"
+                  className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/60 dark:border-slate-800 p-8 md:p-12 shadow-xl max-w-4xl mx-auto space-y-10 text-slate-900 dark:text-slate-100 text-start leading-relaxed"
                 >
 
                   {/* CV Personal Header */}
-                  <div className="border-b border-slate-200 pb-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-6 text-center md:text-start">
+                  <div className="border-b border-slate-200 dark:border-slate-800 pb-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-6 text-center md:text-start">
                     <div className="space-y-2">
-                      <h1 className="text-3xl font-black text-slate-900 tracking-tight leading-none">
+                      <h1 className="text-3xl font-black text-slate-900 dark:text-white tracking-tight leading-none">
                         {t.hero.fullname}
                       </h1>
-                      <p className="text-sm text-slate-500 font-bold uppercase tracking-wider">
+                      <p className="text-sm text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">
                         {t.hero.badge}
                       </p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-semibold text-slate-600">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-semibold text-slate-600 dark:text-slate-400">
                       <div className="flex items-center justify-center md:justify-start gap-2">
                         <Mail size={14} className="text-slate-400" />
                         <span>falsanea@aol.com</span>
@@ -1209,24 +1216,24 @@ const App: React.FC = () => {
 
                   {/* Profile Summary */}
                   <div className="space-y-3">
-                    <h2 className="text-sm font-black text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 flex items-center justify-start gap-2">
+                    <h2 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest border-b border-slate-100 dark:border-slate-800 pb-2 flex items-center justify-start gap-2">
                       <UserCircle size={16} className="text-slate-400" />
                       <span>{t.resume_modal.profile_title}</span>
                     </h2>
-                    <p className="text-xs md:text-sm text-slate-600 font-medium">
+                    <p className="text-xs md:text-sm text-slate-600 dark:text-slate-300 font-medium">
                       {t.resume_modal.profile_desc}
                     </p>
                   </div>
 
                   {/* Core Competencies */}
                   <div className="space-y-3">
-                    <h2 className="text-sm font-black text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 flex items-center justify-start gap-2">
+                    <h2 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest border-b border-slate-100 dark:border-slate-800 pb-2 flex items-center justify-start gap-2">
                       <Target size={16} className="text-slate-400" />
                       <span>{t.resume_modal.competencies_title}</span>
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                       {t.resume_modal.competencies_list.map((skill, i) => (
-                        <div key={i} className="bg-slate-50 rounded-xl p-3 border border-slate-100/80 flex items-center justify-start gap-2 text-xs font-bold text-slate-700">
+                        <div key={i} className="bg-slate-50 dark:bg-slate-800 rounded-xl p-3 border border-slate-100/80 dark:border-slate-800/80 flex items-center justify-start gap-2 text-xs font-bold text-slate-700 dark:text-slate-300">
                           <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
                           <span>{skill}</span>
                         </div>
@@ -1236,7 +1243,7 @@ const App: React.FC = () => {
 
                   {/* Experience */}
                   <div className="space-y-6">
-                    <h2 className="text-sm font-black text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 flex items-center justify-start gap-2">
+                    <h2 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest border-b border-slate-100 dark:border-slate-800 pb-2 flex items-center justify-start gap-2">
                       <Briefcase size={16} className="text-slate-400" />
                       <span>{t.resume_modal.experience_title}</span>
                     </h2>
@@ -1245,15 +1252,15 @@ const App: React.FC = () => {
                         <div key={idx} className="space-y-3">
                           <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start font-bold gap-2">
                             <div className="text-center sm:text-start">
-                              <h3 className="text-sm font-black text-slate-900">{job.company}</h3>
-                              <p className="text-xs text-slate-500 font-semibold">{job.role}</p>
+                              <h3 className="text-sm font-black text-slate-900 dark:text-white">{job.company}</h3>
+                              <p className="text-xs text-slate-500 dark:text-slate-400 font-semibold">{job.role}</p>
                             </div>
                             <div className="text-center sm:text-end text-[10px] text-slate-400 font-bold space-y-1">
                               <p>{job.period}</p>
                               <p>{job.location}</p>
                             </div>
                           </div>
-                          <ul className="list-disc list-inside space-y-1 text-xs text-slate-600 ps-4">
+                          <ul className="list-disc list-inside space-y-1 text-xs text-slate-600 dark:text-slate-300 ps-4">
                             {job.bullets.map((bullet, bIdx) => (
                               <li key={bIdx} className="font-medium">{bullet}</li>
                             ))}
@@ -1265,20 +1272,20 @@ const App: React.FC = () => {
 
                   {/* Projects & Training */}
                   <div className="space-y-3">
-                    <h2 className="text-sm font-black text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 flex items-center justify-start gap-2">
+                    <h2 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest border-b border-slate-100 dark:border-slate-800 pb-2 flex items-center justify-start gap-2">
                       <Award size={16} className="text-slate-400" />
                       <span>{t.resume_modal.projects_title}</span>
                     </h2>
                     <div className="space-y-3">
                       <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start font-bold gap-2">
                         <div className="text-center sm:text-start">
-                          <h3 className="text-sm font-black text-slate-900">{t.resume_modal.project_sub}</h3>
+                          <h3 className="text-sm font-black text-slate-900 dark:text-white">{t.resume_modal.project_sub}</h3>
                         </div>
                         <div className="text-center sm:text-end text-[10px] text-slate-400 font-bold">
                           <p>{t.resume_modal.project_period}</p>
                         </div>
                       </div>
-                      <ul className="list-disc list-inside space-y-1 text-xs text-slate-600 ps-4">
+                      <ul className="list-disc list-inside space-y-1 text-xs text-slate-600 dark:text-slate-300 ps-4">
                         {t.resume_modal.project_bullets.map((bullet, bIdx) => (
                           <li key={bIdx} className="font-medium">{bullet}</li>
                         ))}
@@ -1288,15 +1295,15 @@ const App: React.FC = () => {
 
                   {/* Education */}
                   <div className="space-y-4">
-                    <h2 className="text-sm font-black text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 flex items-center justify-start gap-2">
+                    <h2 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest border-b border-slate-100 dark:border-slate-800 pb-2 flex items-center justify-start gap-2">
                       <GraduationCap size={16} className="text-slate-400" />
                       <span>{t.resume_modal.education_title}</span>
                     </h2>
                     <div className="space-y-4">
                       {t.resume_modal.edu_items.map((edu, i) => (
-                        <div key={i} className="flex justify-between items-center gap-4 border-b border-dashed border-slate-100 pb-3">
+                        <div key={i} className="flex justify-between items-center gap-4 border-b border-dashed border-slate-100 dark:border-slate-800 pb-3">
                           <div className="text-start">
-                            <h4 className="text-xs font-black text-slate-800">{edu.title}</h4>
+                            <h4 className="text-xs font-black text-slate-800 dark:text-slate-200">{edu.title}</h4>
                             <p className="text-[10px] text-slate-400 font-bold mt-0.5">{edu.institution}</p>
                           </div>
                           {edu.period && (
@@ -1309,15 +1316,15 @@ const App: React.FC = () => {
 
                   {/* Technical Stack */}
                   <div className="space-y-4">
-                    <h2 className="text-sm font-black text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 flex items-center justify-start gap-2">
+                    <h2 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest border-b border-slate-100 dark:border-slate-800 pb-2 flex items-center justify-start gap-2">
                       <Database size={16} className="text-slate-400" />
                       <span>{t.resume_modal.tech_skills_title}</span>
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       {t.resume_modal.tech_cols.map((col, i) => (
                         <div key={i} className="space-y-1">
-                          <h4 className="text-xs font-black text-slate-800">{col.title}</h4>
-                          <p className="text-[10px] text-slate-500 font-medium leading-relaxed">{col.content}</p>
+                          <h4 className="text-xs font-black text-slate-800 dark:text-slate-200">{col.title}</h4>
+                          <p className="text-[10px] text-slate-500 dark:text-slate-400 font-medium leading-relaxed">{col.content}</p>
                         </div>
                       ))}
                     </div>
@@ -1325,11 +1332,11 @@ const App: React.FC = () => {
 
                   {/* Languages */}
                   <div className="space-y-3">
-                    <h2 className="text-sm font-black text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 flex items-center justify-start gap-2">
+                    <h2 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest border-b border-slate-100 dark:border-slate-800 pb-2 flex items-center justify-start gap-2">
                       <Globe size={16} className="text-slate-400" />
                       <span>{t.resume_modal.languages_title}</span>
                     </h2>
-                    <div className="flex gap-6 justify-start text-xs font-bold text-slate-700">
+                    <div className="flex gap-6 justify-start text-xs font-bold text-slate-700 dark:text-slate-300">
                       {t.resume_modal.languages_list.map((langItem, i) => (
                         <span key={i}>{langItem}</span>
                       ))}
@@ -1340,7 +1347,7 @@ const App: React.FC = () => {
               </div>
 
               {/* Action Triggering Footer */}
-              <div className="p-6 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row gap-4 justify-between items-center text-slate-700">
+              <div className="p-6 bg-slate-50 dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row gap-4 justify-between items-center text-slate-700 dark:text-slate-300">
                 <span className="text-xs font-bold text-slate-400 flex items-center gap-1.5 uppercase tracking-wider">
                   <CheckCircle size={14} className="text-emerald-500" />
                   {t.hero.fullname} - Official CV Profile
@@ -1348,14 +1355,14 @@ const App: React.FC = () => {
                 <div className="flex gap-3 w-full sm:w-auto">
                   <button
                     onClick={() => window.print()}
-                    className="flex-1 sm:flex-none px-6 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs rounded-xl transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                    className="flex-1 sm:flex-none px-6 py-3.5 bg-slate-900 dark:bg-slate-100 hover:bg-slate-800 dark:hover:bg-slate-200 text-white dark:text-slate-950 font-bold text-xs rounded-xl transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <Printer size={14} />
                     {t.resume_modal.print}
                   </button>
                   <button
                     onClick={() => window.print()}
-                    className="flex-1 sm:flex-none px-6 py-3.5 bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 font-bold text-xs rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
+                    className="flex-1 sm:flex-none px-6 py-3.5 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-800 font-bold text-xs rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <Download size={14} />
                     {t.resume_modal.download}
